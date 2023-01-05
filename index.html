@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga - My Hobby 🧘🏻‍♀️</title>
+    <style>
+      body {
+        background: linear-gradient(to right, lavender, lavenderblush);
+      }
+
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid aliceblue;
+        background: white;
+        font-size: 24px;
+        border-radius: 10px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: aliceblue;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      footer {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 18px;
+      }
+      .theme-button {
+        font-size: 10px;
+        background: black;
+        color: white;
+        padding: 5 8px;
+      }
+      .theme-button:hover {
+        color: black;
+        background: white;
+      }
+      .yoga-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .yoga-intro-picture:hover {
+        filter: contrast(50%);
+        transform: scale(1.2);
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        aspect-ratio: 1/0.8;
+      }
+      .dark {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change Theme</button>
+    <div class="container">
+      <h1>Yoga</h1>
+      <h2>One of My Favorite Hobbies</h2>
+      <a href="https://en.wikipedia.org/wiki/Yoga" target="blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/542/original/15276522_1751565705173821_3262763329080262656_n.jpg?1668796273"
+          alt=""
+          class="yoga-intro-picture"
+      /></a>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/543/original/14607132_160558664411706_7934040244918157312_n.jpg?1668796300"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/587/original/14128877_1144493858968742_77703918_n.jpg?1668821687"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/545/original/13437301_1314111651950956_212287702_n.jpg?1668796477"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/054/546/original/12292834_515810568581243_1281453509_n.jpg?1668796529"
+          alt=""
+        />
+      </div>
+      <p>
+        Yoga is a group of physical, mental, and spiritual practices or
+        disciplines which originated in ancient India and aim to control and
+        still the mind, recognizing a detached witness-consciousness untouched
+        by the mind and mundane suffering.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Yoga" target="blank"
+        ><button>Learn More</button></a
+      >
+    </div>
+    <footer>Coded by Josie Harvey</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        //body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
+</body>
+</html>
